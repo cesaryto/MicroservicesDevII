@@ -12,14 +12,14 @@ spec:
       app: gateway
       type: microservice
   template:
-    metada:
+    metadata:
       name: gateway-pod
       labels:
         app: gateway
         type: microservice
     spec:
-      containers:
-       - name: gateway-app
-         image: cesarin1339/serviciosapigateway:latest
-         ports:
-           - containerPort: 80
+     containers:
+      - name: gateway-app
+        image: cesarin1339/serviciosapigateway:latest
+        ports:
+          - containerPort: 80

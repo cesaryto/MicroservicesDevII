@@ -12,17 +12,17 @@ spec:
       app: microservice-seguridad
       name: mssql-pod
   template:
-    metada:
+    metadata:
       name: mssql-pod
       labels:
         app: microservice-seguridad
-        type: mssql-pod
+        name: mssql-pod
     spec:
       containers:
         - name: mssql
           image: mcr.microsoft.com/mssql/server
           ports:
-            - containerPort: 1443
+            - containerPort: 1433
           env:
           - name: ACCEPT_EULA
             value: "Y"

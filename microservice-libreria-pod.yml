@@ -1,6 +1,6 @@
 apiVersion: v1
 kind: Pod
-metada:
+metadata:
   name: microservice-libreria-pod
   labels:
     app: microservice-libreria
@@ -8,9 +8,9 @@ metada:
 spec:
   containers:
     - name: microservice-libreria-app
-      image: cesarin1339/serviciosapilibreria:latest
+      image: vaxidrez/serviciosapilibreria:latest
       ports:
         - containerPort: 80
       env:
         - name: MongoDb__ConnectionString
-          value: mongodb://vaxidrez:$VaxiDrez2025@mongo-service:27027
+          value: mongodb://vaxidrez:$VaxiDrez2025@mongo-service:27017

@@ -8,8 +8,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 1443
-      targetPort: 1443
+    - port: 1433
+      targetPort: 1433
   selector:
     app: microservice-seguridad
-    type: mssql-pod
+    name: mssql-pod

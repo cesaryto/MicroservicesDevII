@@ -12,7 +12,7 @@ spec:
       app: microservice-seguridad
       type: microservice
   template:
-    metada:
+    metadata:
       name: microservice-seguridad-pod
       labels:
         app: microservice-seguridad
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: microservice-seguridad-app
-          image: cesarin1339/serviciosapiseguridad:latest
+          image: vaxidrez/serviciosapiseguridad:v3.#{Build.BuildId}#
           ports:
             - containerPort: 80
           env:
